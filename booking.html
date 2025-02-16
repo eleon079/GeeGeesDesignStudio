@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Consultation Booking - GGDS</title>
+
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Flatpickr for Calendar -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+        />
+
+        <!-- Main Stylesheet -->
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html#">
+                    <span class="logo-box">GGDS</span> GeeGees Design Studio
+                </a>
+                <div
+                    class="collapse navbar-collapse justify-content-end"
+                    id="navbarNav"
+                >
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html"
+                                >Services</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#process"
+                                >Process</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#projects"
+                                >Projects</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#reviews"
+                                >Testimonials</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact"
+                                >Contact</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="location.html"
+                                >Location</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="booking.html"
+                                >Book Consultation</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Booking Section -->
+        <section class="booking-section text-center">
+            <div class="container" style="padding-top: 65px">
+                <h2>Select a consultation date</h2>
+                <input
+                    type="text"
+                    id="calendar"
+                    class="form-control mx-auto"
+                    style="width: 300px; margin-bottom: 20px"
+                />
+
+                <h3 id="time-heading" style="display: none; padding-top: 300px">
+                    Select a time
+                </h3>
+                <div class="time-slots">
+                    <button class="btn btn-dark time-btn" data-time="7:30 AM">
+                        7:30 AM
+                    </button>
+                    <button class="btn btn-dark time-btn" data-time="8:00 AM">
+                        8:00 AM
+                    </button>
+                    <button class="btn btn-dark time-btn" data-time="8:30 AM">
+                        8:30 AM
+                    </button>
+                    <button class="btn btn-dark time-btn" data-time="9:00 AM">
+                        9:00 AM
+                    </button>
+                    <button class="btn btn-dark time-btn" data-time="4:30 PM">
+                        4:30 PM
+                    </button>
+                    <button class="btn btn-dark time-btn" data-time="5:00 PM">
+                        5:00 PM
+                    </button>
+                    <button class="btn btn-dark time-btn" data-time="5:30 PM">
+                        5:30 PM
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bootstrap & Flatpickr JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+        <!-- Main Script -->
+        <script src="script.js"></script>
+    </body>
+</html>
